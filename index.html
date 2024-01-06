@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/styles.css" />
+
+    <link rel="stylesheet" href="css/custom-header.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+
+    <title>Nav Hero</title>
+  </head>
+  <body class="text-slate-50 font-roboto overflow-hidden">
+    <!-- Navbar -->
+    <header class="p-4 md:p-6 bg-blue-600">
+      <nav class="container mx-auto flex justify-between items-center">
+        <!-- Logo Teks "SAAS" -->
+        <div>
+          <img
+            src="assets/nav-logo.png"
+            alt="nav-logo"
+            class="w-[130px] cursor-pointer"
+          />
+        </div>
+
+        <!-- Menu Navigasi -->
+        <ul
+          id="nav-menu"
+          class="order-3 bg-blue-500 absolute w-[50%] h-full top-0 right-[-100%] flex flex-col justify-start items-center gap-8 p-6 md:relative md:order-2 md:w-auto md:h-auto md:right-0 md:bg-transparent md:flex-row md:p-0"
+        >
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">About</a></li>
+          <li><a href="#" class="hover:underline">Features</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+          <button class="px-5 py-2 md:hidden hover:underline">Login</button>
+        </ul>
+
+        <div class="flex items-center md:order-3">
+          <!-- Tombol Login dan Sign Up -->
+          <div class="order-1 flex">
+            <button class="px-5 py-2 hidden hover:underline es:block">
+              Login
+            </button>
+            <button
+              class="px-5 py-2 es:bg-blue-500 hover:bg-sky-600 es:rounded-lg"
+            >
+              Sign Up
+            </button>
+          </div>
+
+          <!-- Toggler Menu Navigasi -->
+          <div id="m-toggle-menu" class="order-2 relative z-50">
+            <button class="px-5 py-2 absolute top--1-2rem md:hidden">
+              <?xml version="1.0" encoding="utf-8"?>
+
+              <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+              <svg
+                width="28px"
+                height="28px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="Menu / Menu_Alt_01">
+                  <path
+                    id="Vector"
+                    d="M12 17H19M5 12H19M5 7H19"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+
+          <div class="order-2 relative z-50 px-5 py-2 right-0 top-20 md:hidden">
+            <!-- div kosong -->
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
